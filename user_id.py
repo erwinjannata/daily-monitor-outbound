@@ -302,4 +302,6 @@ user = {
     "IDHNUDI": "MANGGALEWA",
     "KARIMAMI": "TANJUNG ",
     "NIKMUR": "SUMBAWA",
+    "ELIATI": "MATARAM",
+    "AMI352": "MATARAM"
 }

@@ -3624,6 +3624,154 @@
    'd:\\JNE\\PROGRAM\\DAILY MONITORING '
    'OUTBOUND\\.venv\\Lib\\site-packages\\win32\\lib\\winerror.py',
    'PYMODULE'),
+  ('xlsxwriter',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\__init__.py',
+   'PYMODULE'),
+  ('xlsxwriter.app',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\app.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\chart.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart_area',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\chart_area.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart_bar',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\chart_bar.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart_column',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\chart_column.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart_doughnut',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\chart_doughnut.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart_line',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\chart_line.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart_pie',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\chart_pie.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart_radar',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\chart_radar.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart_scatter',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\chart_scatter.py',
+   'PYMODULE'),
+  ('xlsxwriter.chart_stock',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\chart_stock.py',
+   'PYMODULE'),
+  ('xlsxwriter.chartsheet',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\chartsheet.py',
+   'PYMODULE'),
+  ('xlsxwriter.comments',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\comments.py',
+   'PYMODULE'),
+  ('xlsxwriter.contenttypes',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\contenttypes.py',
+   'PYMODULE'),
+  ('xlsxwriter.core',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\core.py',
+   'PYMODULE'),
+  ('xlsxwriter.custom',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\custom.py',
+   'PYMODULE'),
+  ('xlsxwriter.drawing',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\drawing.py',
+   'PYMODULE'),
+  ('xlsxwriter.exceptions',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\exceptions.py',
+   'PYMODULE'),
+  ('xlsxwriter.format',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\format.py',
+   'PYMODULE'),
+  ('xlsxwriter.metadata',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\metadata.py',
+   'PYMODULE'),
+  ('xlsxwriter.packager',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\packager.py',
+   'PYMODULE'),
+  ('xlsxwriter.relationships',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\relationships.py',
+   'PYMODULE'),
+  ('xlsxwriter.rich_value',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\rich_value.py',
+   'PYMODULE'),
+  ('xlsxwriter.rich_value_rel',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\rich_value_rel.py',
+   'PYMODULE'),
+  ('xlsxwriter.rich_value_structure',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\rich_value_structure.py',
+   'PYMODULE'),
+  ('xlsxwriter.rich_value_types',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\rich_value_types.py',
+   'PYMODULE'),
+  ('xlsxwriter.shape',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\shape.py',
+   'PYMODULE'),
+  ('xlsxwriter.sharedstrings',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\sharedstrings.py',
+   'PYMODULE'),
+  ('xlsxwriter.styles',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\styles.py',
+   'PYMODULE'),
+  ('xlsxwriter.table',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\table.py',
+   'PYMODULE'),
+  ('xlsxwriter.theme',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\theme.py',
+   'PYMODULE'),
+  ('xlsxwriter.utility',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\utility.py',
+   'PYMODULE'),
+  ('xlsxwriter.vml',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\vml.py',
+   'PYMODULE'),
+  ('xlsxwriter.workbook',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\workbook.py',
+   'PYMODULE'),
+  ('xlsxwriter.worksheet',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\worksheet.py',
+   'PYMODULE'),
+  ('xlsxwriter.xmlwriter',
+   'd:\\JNE\\PROGRAM\\DAILY MONITORING '
+   'OUTBOUND\\.venv\\Lib\\site-packages\\xlsxwriter\\xmlwriter.py',
+   'PYMODULE'),
   ('xlwings',
    'd:\\JNE\\PROGRAM\\DAILY MONITORING '
    'OUTBOUND\\.venv\\Lib\\site-packages\\xlwings\\__init__.py',
