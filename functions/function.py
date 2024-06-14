@@ -3,19 +3,34 @@ import gc
 import sys
 import pandas as pd
 import xlwings as xl
+from pathlib import Path
 from tkinter.messagebox import showinfo
-from user_id import user
-from customer_id import customer
 from datetime import datetime, timedelta
 
 
 def grouping(file_data, date, save_grouping, saved_as):
-    # Read data source
+    # Read data source and refs
     try:
+        working_dir = Path.cwd()
         data_awb = pd.read_excel(file_data, sheet_name='AWB')
         data_cancel = pd.read_excel(file_data, sheet_name='AWB CANCEL')
+
         df_awb = pd.DataFrame(data_awb)
         df_cancel = pd.DataFrame(data_cancel)
+        df_user = pd.read_excel(
+            rf'{working_dir}\REFS.xlsx', sheet_name='USERS')
+        df_customer = pd.read_excel(
+            rf'{working_dir}\REFS.xlsx', sheet_name='CUSTOMER')
+
+        user = {}
+        customer = {}
+
+        for i in range(0, df_user.shape[0]):
+            user[str(df_user['USER ID'][i])] = df_user["CABANG"][i]
+
+        for i in range(0, df_customer.shape[0]):
+            customer[str(df_customer['CUST_ID_2'][i])
+                     ] = df_customer['BIG_GROUPING_CUST_2'][i]
     except Exception as e:
         showinfo(title="Error", message=e)
         sys.exit()
