@@ -145,7 +145,9 @@ def grouping(file_data, date, save_grouping, saved_as):
                 status_pod.append("UNINBOUND")
             elif df_awb['RUNSHEET NO'][index] == '-':
                 status_pod.append("UNRUNSHEET")
-            elif (df_awb['RUNSHEET NO'][index] != '-' and df_awb['POD STATUS'][index] == '-') and (df_awb['RUNSHEET DATE'][index] != '-' and datetime.strptime(str(df_awb['RUNSHEET DATE'][index]), '%Y-%d-%m %H:%M:%S').strftime("%#m/%#d/%Y") == today):
+            elif (df_awb['RUNSHEET NO'][index] != '-' and df_awb['POD STATUS'][index] == '-') and ((df_awb['RUNSHEET DATE'][index] != '-' and isinstance(df_awb['RUNSHEET DATE'][index], str) == False) and datetime.strptime((str(df_awb['RUNSHEET DATE'][index])), '%Y-%d-%m %H:%M:%S').strftime("%#m/%#d/%Y") == today):
+                status_pod.append("ONDELIVERY")
+            elif (df_awb['RUNSHEET NO'][index] != '-' and df_awb['POD STATUS'][index] == '-') and ((df_awb['RUNSHEET DATE'][index] != '-' and isinstance(df_awb['RUNSHEET DATE'][index], str) == True) and datetime.strptime((str(df_awb['RUNSHEET DATE'][index])), '%d/%m/%Y %H:%M:%S').strftime("%#m/%#d/%Y") == today):
                 status_pod.append("ONDELIVERY")
             elif df_awb['RUNSHEET NO'][index] != '-' and df_awb['POD STATUS'][index] == '-':
                 status_pod.append("OPEN")
@@ -179,9 +181,12 @@ def grouping(file_data, date, save_grouping, saved_as):
                 status_pod.append("")
 
             # ---- DATE RUNSHEET
-            if not df_awb['RUNSHEET DATE'][index] == "-":
+            if not df_awb['RUNSHEET DATE'][index] == "-" and isinstance(df_awb['RUNSHEET DATE'][index], str) == False:
                 date_runsheet.append(df_awb['RUNSHEET DATE']
-                                     [index].strftime("%#m/%#d/%Y"))
+                                     [index].strftime("%#d/%#m/%Y"))
+            elif not df_awb['RUNSHEET DATE'][index] == "-" and isinstance(df_awb['RUNSHEET DATE'][index], str) == True:
+                date_runsheet.append(datetime.strptime(str(df_awb['RUNSHEET DATE']
+                                     [index]), '%d/%m/%Y %H:%M:%S').strftime("%#m/%#d/%Y"))
             else:
                 date_runsheet.append("")
 
