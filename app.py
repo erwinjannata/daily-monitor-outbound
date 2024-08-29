@@ -4,12 +4,13 @@ from tkinter.messagebox import showinfo
 from tkcalendar import DateEntry
 import threading
 import os
-from functions.function import grouping, daily_monitor
+from functions.processing import combining
+from functions.grouping import grouping
 
 root = tk.Tk()
 root.configure(bg="white")
-root.geometry("350x475")
-root.title("JNE AMI Outbound App")
+root.geometry("350x515")
+root.title("JNE AMI Outbound App v.3.5")
 root.resizable(0, 0)
 
 file_data = ""
@@ -19,6 +20,7 @@ file_data_name = tk.StringVar()
 file_report_name = tk.StringVar()
 mode = tk.StringVar()
 over_month = tk.IntVar()
+is_grouped = tk.IntVar()
 
 
 def load_data():
@@ -49,8 +51,8 @@ def combine_process():
     if os.path.exists(file_data) and saved_as:
         progressbar.start()
         if mode == 0 and os.path.exists(file_report):
-            daily_monitor(file_data=file_data, file_report=file_report,
-                          date=date, saved_as=saved_as, over_month=over_month.get())
+            combining(file_data=file_data, file_report=file_report,
+                          date=date, saved_as=saved_as, over_month=over_month.get(), is_grouped=is_grouped.get())
         elif mode == 0 and not os.path.exists(file_report):
             showinfo(title="Message",
                      message="File report terbaru tidak ditemukan")
@@ -124,6 +126,10 @@ label2 = ttk.Label(root, text="3. File Data", background="white", font="calibri 
 
 label_name1 = ttk.Label(root, textvariable=file_data_name, background="white").pack(
     fill="x", padx=10, pady=5)
+
+check_label_grouped = tk.Checkbutton(
+    root, text="Data sudah di grouping", background="white", variable=is_grouped, onvalue=1, offvalue=0)
+check_label_grouped.pack(pady=5, padx=10, anchor="w")
 
 
 btn1 = ttk.Button(root, text="Pilih File", command=load_data, state=tk.NORMAL)
